@@ -1,0 +1,288 @@
+.no-border {
+  border: 0;
+  border-width: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .swal2-popup {
+    width: 90%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .swal2-popup {
+    width: 60%;
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+  }
+}
+
+.title-icon {
+  color: #27ae60;
+  font-weight: 700;
+}
+
+.text-icon {
+  color: #24445a;
+  font-weight: 500;
+}
+
+.confirm-icon {
+  font-weight: 600;
+  width: 120px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cancel-icon {
+  font-weight: 600;
+  width: 120px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.title-icon-error {
+  color: #cd3838;
+  font-weight: 700;
+}
+
+.title-icon-errorr {
+  color: #24445a;
+  font-weight: 700;
+}
+
+.custom-class {
+  border-radius: 100px;
+  padding-left: 50px;
+}
+
+.otp-input {
+  margin-right: 1px;
+  margin-left: 1px;
+}
+
+.otp-button {
+  display: flex;
+}
+
+.simpan-button {
+  font-weight: 200;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.batalkan-button {
+  font-weight: 200;
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
+.overlay-container {
+  position: relative;
+  display: inline-block;
+}
+
+.base-image,
+.overlay-image {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+.overlay-image {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.round {
+  border-radius: 50px;
+}
+
+.hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-text {
+  visibility: hidden;
+  background-color: white;
+  color: #064878;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: visibility 0.3s ease;
+}
+
+.hover-container:hover .hover-text {
+  visibility: visible;
+}
+
+.card-container {
+  min-height: 400px;
+}
+
+.canvas-container {
+  height: 200px;
+}
+
+.note-container {
+  min-height: 50px;
+}
+
+.legend-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.legend-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.legend-label {
+  font-size: 14px;
+}
+
+.pendapatan-style {
+  margin-bottom: 100px;
+  color: #cd3838;
+  background-color: aqua;
+  /* Tambahkan properti CSS lain sesuai kebutuhan */
+}
+
+.timeseries-container {
+  min-height: 400px; /* Menetapkan tinggi minimum untuk card */
+}
+
+.timeseries-legend-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 5px;
+}
+
+.timeseries-legend-item {
+  flex-basis: calc(33.33% - 5px); /* 33.33% for each column with a 5px gap */
+}
+
+.timeseries-legend-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.timeseries-legend-label {
+  font-size: 14px;
+}
+
+.responsive-canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.swal2-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swal2-html-container {
+  text-align: center; /* Memastikan teks dan gambar berada di tengah */
+}
+
+.swal2-title-blue {
+  color: #24445a; /* Mengatur warna judul menjadi biru */
+  font-size: 20px;
+}
+
+.loader-img {
+  width: 5px; /* Sesuaikan ukuran gambar loader sesuai kebutuhan */
+  height: 5px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.react-datepicker {
+  font-family: "Poppins";
+  font-size: 12px;
+  background-color: #fff;
+  color: #24445a;
+}
+
+.react-datepicker__navigation {
+  align-items: center;
+  background: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  padding: 0;
+  border: none;
+  z-index: 1;
+  margin-top: 10px;
+  overflow: hidden;
+  &--previous {
+    left: 40px;
+  }
+  &--next {
+    right: 2px;
+
+    &--with-time:not(&--with-today-button) {
+      right: 85px;
+    }
+  }
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #24445a;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  font-size: 12px;
+}
+
+.custom-table-width {
+  width: 1222px; /* Adjust the width as needed */
+}

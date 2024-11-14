@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+.oleo-script-regular {
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+@layer components{
+  .infield{
+    @apply flex w-full h-[40px] border rounded-[8px] text-secondary py-2 px-3 leading-tight text-[14px] items-center  
+  }
+}  
+
+@layer components{
+  .button{
+    @apply w-[313px] h-[40px] py-2 px-4 rounded-[8px] text-[14px] font-medium text-white bg-secondary hover:bg-third active:bg-secondary active:bg-opacity-70
+  }
+}
+
+.fade-in-out {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; /* Ubah durasi dan fungsi transisi sesuai kebutuhan Anda */
+}
+
+.lock-scroll {
+  overflow: hidden;
+}
+
+select:focus {
+  outline:none;
+}   
+
+/* custom scrollbar */
+::-webkit-scrollbar{
+  width: 5px;
+}
+.mini-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+.mini-scrollbar-horizontal::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #24445A;
+  border-radius: 100px;
+}
+/* SLIDER DASHBOARD */
+.item{
+  min-width: 18rem;
+  min-height: 18rem;
+  padding: 10px;
+  border: #24445A;
+  border-radius: 9999px;
+  border: 10px solid #EFF7FB;
+  margin: 5px;
+}
+
+.item img{
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  pointer-events: none;
+}
+
+.inner-karousel{
+  display: flex;
+}
+
+.slidernya{
+  cursor: grab;
+  overflow: hidden;
+}
+.holds-the-iframe {
+  background:url(../../frontend/src/assets/loadernya.gif) center center no-repeat;
+  background-size: 100px;
+}
+
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+  border: 2px dashed #ccc;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
